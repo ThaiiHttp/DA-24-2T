@@ -1,14 +1,19 @@
-const kk =""
-const numP4=""
-const numP6=""
-const numP8=""
-const numP10=""
 
-const numP2= prompt ("Digite um número")
-if(nump2%2==0){
-    console.log("par")
+
+const numP2= prompt ("Digite um número") // Nessa constante irei obter, ataves de um prompt, um numero desejado para teste.
+if(numP2%2==0){ //Nessa condição está sendo feita a divisao por dois e checando se nao possui sobras.
+    console.log("par") //Neste comando será impresso no console "par" se a checagem nao poussuir sobras.
 }
-if(nump2%2==1){
-    console.log("impar")
+if(numP2%2==1){ // Nessa condição está sendo feita a divisão por dois e checando se possui sobras.
+    console.log("impar") // Neste comando será impresso no console "impar" se a checagem possuir sobras.
 }
-//console.log ("os numeros pares são:" , numP2, numP4, numP6, numP8, "e" numP10)
+
+
+/*Caso de teste 1     Caso de teste 2         Caso de teste 3             Caso de teste 4             Caso de teste 5
+Dados de entrada = 2  Dados de entrada = 4    Dados de entrada =13        Dados de entrada = 21       Dados de entrada = 37
+Saída esperada = par  Saída esperada = par    Saída esperada = ímpar      Saída esperada = ímpar      Saída esperada = ímpar
+Saída real = par      Saída real = par        Saída real = ímpar          Saída real = ímpar          Saída real = ímpar
+Resultado = passou    Resultado = passou      Resultado = passou          Resultado = passou          Resultado = passou
+*/
+
+
