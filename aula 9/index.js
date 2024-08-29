@@ -48,7 +48,7 @@ listaDeTarefas.push(tarefa2)
 listaDeTarefas.push(tarefa3)
 console.log(listaDeTarefas)
 
-const tarefaRealizada=prompt("Qual tarefa voce realizou?")
+const    tarefaRealizada=prompt("Qual tarefa voce realizou?")
 
 
 
