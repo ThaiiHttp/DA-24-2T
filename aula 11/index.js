@@ -39,4 +39,4 @@ if(numero > 0 ){
     console.log("Esse numero passou no teste.") // ao inserir o numero 10 será impresso a mensagem do console.log 
     let mensagem = ("Essa mensagem é secreta") // ao iserir o valor de -10 nao sera impresso nada, pois nao foi definido mensagem no console.log
 }
-console.log(mensagem) //havera um erro no console, pois o comando do console.log nao esta dentro das chaves. b  
+console.log(mensagem) //havera um erro no console, pois o comando do console.log nao esta dentro das chaves. b       
