@@ -63,3 +63,13 @@ for(let numero of numeros){
 }*/
 
 
+const palavras = ["Palavra", "sao", "uma", "inesgotael", "fonte", "de", "magia"]
+let palavrasMaisLongas = [ palavras[0]]
+for(let palavra of palavras){
+    if(palavrasMaisLongas[0]<palavra){
+        lenght<palavra.push
+        (palavra)
+    }
+}
+console.log(palavrasMaisLongas)
+
