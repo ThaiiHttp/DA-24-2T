@@ -40,12 +40,12 @@ for(var i = 0; i<6; i++){
 console.log("O numeero maior é;", maior)*/
 
 
-/*const numbers [ 2, 4, 6, 7, 9, 10, 12]
+const numbers = [ 2, 4, 6, 7, 9, 10, 12]
 let soma = 0;
-for(i=0; i<= numbers.lenght; i++;) if (numbers[i] % 2==0){
-    soma += numbers[i]
+for(i=0; i<= numbers.length; i++ ) if (numbers[i] % 2==0){
+    soma += soma[i]
 } 
-console.log("A soma dos numeros pares é:", soma)*/
+console.log("A soma dos numeros pares é:", soma)
     
 
 /*constfrases ["Oi", "sumido", "Tudo", "bem?", "saudades"]
