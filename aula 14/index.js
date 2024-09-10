@@ -35,6 +35,7 @@ for(let numero of meuArray){
     soma+=numero
 }
 console.log(soma)
+ls
 
      
 
