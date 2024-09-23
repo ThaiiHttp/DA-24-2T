@@ -47,11 +47,14 @@ console.log(defesa)
 defesa()
 ataqueEspecial()
 ataqueNormal()
+acoes(listaDePersonagens[1])
 console.log(listaDeacoes)
 
-function acoes(listaDePersonagens) { //
+function acoes(listaDePersonagens) { // //funçao que vai realizar a açao 
     listaDePersonagens.historicoAcoes.push(defesa());
     listaDePersonagens.historicoAcoes.push(ataqueNormal());
     listaDePersonagens.historicoAcoes.push(ataqueEspecial());
   }
+  const buscar = prompt("digite um personage para buscar") //variavel que busca o nome de um personagem especifico 
+  console.log(listaDePersonagens.find((personagem) =>  personagem.nome === buscar )) //busca em lista de personagem o personagem digitado
   
