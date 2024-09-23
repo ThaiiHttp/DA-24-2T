@@ -16,5 +16,6 @@ const professor2 = {
     tarefas:["Dar aula", "Responder duvidas"],
     contarPiada:function(){
         console.log("É pa ve ou pa come?")}
+
     }
 
