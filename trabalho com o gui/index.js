@@ -68,4 +68,12 @@ console.log(listaDePersonagens.splice((personagem) => personagem.nome === exclui
 const listaAlfabética = listaDePersonagens["nome"].sort(); //variavel que lista os personagens em ordem alfabetica
 
 console.log(listaAlfabética) //imprime a lista de personagens em ordem alfabetica
- 
+
+function exibirStatus(nome) {
+    const personagem = buscarPersonagem(nome);
+    if (personagem) {
+        console.log(personagem);
+    } else {
+        console.log(`Personagem ${nome} não encontrado.`);
+    }
+}
