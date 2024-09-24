@@ -13,7 +13,7 @@ let matrizes = [
  let matriz1 = [
     [0,0,0],
     [0,0,0],
-    [0,1,0]
+    [0,0,0]
  ]
  console.log(matriz1[2][1])
 console.log(matriz1)
