@@ -1,4 +1,4 @@
-const listaDePersonagens = [];//variavel que armazena uma lista de personagem dentro de um array
+/*const listaDePersonagens = [];//variavel que armazena uma lista de personagem dentro de um array
 
 let listaDeacoes = [];//variavel que armazena uma lista de açoes dentro de um array
 
@@ -75,5 +75,82 @@ function exibirStatus(nome) {
         console.log(personagem);
     } else {
         console.log(`Personagem ${nome} não encontrado.`);
-    }
-}
+    }*/
+
+
+        
+        let inventario = [
+          [null, null, null, null, null],
+          [null, null, null, null, null]
+        ];
+        
+        function adicionarItem(item) {
+          for (let i = 0; i < inventario.length; i++) {
+            for (let j = 0; j < inventario[i].length; j++) {
+              if (inventario[i][j] === null) {
+                inventario[i][j] = item;
+                console.log(Item ${item} adicionado no slot [${i}][${j}].);
+                return;
+              }
+            }
+          }
+          console.log("Inventário cheio! Descarte um item para adicionar um novo.");
+        }
+        function removerItem(item) {
+          for (let i = 0; i < inventario.length; i++) {
+            for (let j = 0; j < inventario[i].length; j++) {
+              if (inventario[i][j] === item) {
+                inventario[i][j] = null;
+                console.log(Item ${item} removido do slot [${i}][${j}].);
+                return;
+              }
+            }
+          }
+          console.log(Item ${item} não encontrado no inventário.);
+        }
+        adicionarItem("Pistola");
+        adicionarItem("Erva Verde");
+        adicionarItem("Chave");
+        removerItem("Pistola");
+        adicionarItem("Escopeta");
+        
+      let inimigos = [
+          { tipo: "zumbi", vida: 30 },
+          { tipo: "zumbi", vida: 50 },
+          { tipo: "mutante", vida: 100 }
+        ];
+        
+        function atacarInimigo(arma, dano) {
+          for (let i = 0; i < inimigos.length; i++) {
+            inimigos[i].vida -= dano;
+            console.log(Atacou ${inimigos[i].tipo} com ${arma}, dano: ${dano}, vida restante: ${inimigos[i].vida});
+            if (inimigos[i].vida <= 0) {
+              console.log(${inimigos[i].tipo} eliminado!);
+              inimigos.splice(i, 1); 
+              i--; 
+            }
+          }
+        }
+        atacarInimigo("pistola", 20);
+        atacarInimigo("escopeta", 30);
+        
+      let estadoJogo = {
+          vidaJogador: 100,
+          inventarioSalvo: [],
+          inimigosSalvos: []
+        };
+        
+        function salvarJogo() {
+          estadoJogo.inventarioSalvo = JSON.parse(JSON.stringify(inventario)); 
+          estadoJogo.inimigosSalvos = JSON.parse(JSON.stringify(inimigos)); 
+          console.log("Jogo salvo!");
+        }
+        
+        function carregarJogo() {
+          inventario = JSON.parse(JSON.stringify(estadoJogo.inventarioSalvo)); 
+          inimigos = JSON.parse(JSON.stringify(estadoJogo.inimigosSalvos)); 
+          console.log("Jogo carregado!");
+        }
+        salvarJogo();
+        removerItem("Erva Verde"); 
+        carregarJogo();
